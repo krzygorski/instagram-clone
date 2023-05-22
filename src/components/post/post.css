@@ -1,0 +1,68 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  width: 400px;
+}
+.post .post_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post .post_header .post_header_panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5px;
+}
+.post .post_header .post_header_panel .post_header_img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.post .post_header .post_header_panel .post_header_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.post .post_header .post_header_panel .post_header_content .post_header_content_name {
+  font-size: 15px;
+  font-weight: 600;
+}
+.post .post_header .post_header_panel .post_header_content .post_header_content_time {
+  color: #bbb;
+}
+.post .post_header .post_header_panel .post_header_content .post_header_content_location {
+  margin-top: 3px;
+  font-size: 12px;
+}
+.post .post_header .post_header_panel .post_header_username {
+  font-size: 15px;
+  font-weight: 600;
+}
+.post .post_img_container {
+  width: 400px;
+  height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.post .post_panel {
+  padding: 5px 0;
+}
+.post .post_panel .post_panel_likes {
+  display: flex;
+  justify-content: space-between;
+}
+.post .post_panel .post_panel_likes div {
+  padding: 5px;
+}
+.post .post_panel .post_panel_likes div .post_panel_icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.post .post_panel .post_panel_likes div .post_panel_icon_last {
+  margin-right: 0px;
+}/*# sourceMappingURL=post.css.map */
