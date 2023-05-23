@@ -6,8 +6,13 @@ export const Wrapper = () => {
   return (
     <div className="wrapper">
       <Sidebar />
-      <div className="posts">
-        <Post />
+      <div className="content">
+        <div className="posts">
+          <Post />
+          <Post />
+          <Post />
+          <Post />
+        </div>
       </div>
     </div>
   );

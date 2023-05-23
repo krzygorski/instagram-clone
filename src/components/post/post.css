@@ -4,6 +4,9 @@
   background-color: black;
   color: white;
   width: 400px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333;
+  margin-bottom: 20px;
 }
 .post .post_header {
   display: flex;
@@ -52,17 +55,41 @@
 .post .post_panel {
   padding: 5px 0;
 }
-.post .post_panel .post_panel_likes {
+.post .post_panel .post_panel_action {
   display: flex;
   justify-content: space-between;
 }
-.post .post_panel .post_panel_likes div {
-  padding: 5px;
+.post .post_panel .post_panel_action div {
+  padding: 5px 0 10px 0;
 }
-.post .post_panel .post_panel_likes div .post_panel_icon {
-  margin-right: 10px;
+.post .post_panel .post_panel_action div .post_panel_icon {
+  margin-right: 15px;
   font-size: 20px;
 }
-.post .post_panel .post_panel_likes div .post_panel_icon_last {
+.post .post_panel .post_panel_action div .post_panel_icon_last {
   margin-right: 0px;
+}
+.post .post_panel .post_panel_description {
+  margin-top: 5px;
+}
+.post .post_panel .post_panel_description .post_panel_description_name {
+  font-size: 15px;
+  font-weight: 600;
+}
+.post .post_panel .post_panel_description .post_panel_description_content {
+  font-size: 15px;
+  font-weight: 400;
+}
+.post .post_panel .post_panel_more_comments {
+  font-size: 15px;
+  margin-top: 5px;
+  color: #bbb;
+}
+.post .post_panel .post_new_comment {
+  margin-top: 5px;
+}
+.post .post_panel .post_new_comment input {
+  border: none;
+  background: black;
+  font-size: 15px;
 }/*# sourceMappingURL=post.css.map */

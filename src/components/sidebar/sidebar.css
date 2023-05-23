@@ -1,7 +1,19 @@
 nav {
-  padding: 30px 60px 0 20px;
+  padding: 30px 60px 0 40px;
+  border-right: 1px solid #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+nav #ig_logo_mobile {
+  display: none;
+}
+nav #ig_logo_desktop {
+  display: block;
 }
 nav .links {
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -16,10 +28,25 @@ nav .links .link svg {
   color: white;
   width: 24;
   height: 24;
+  margin-right: 16px;
 }
 nav .links .link a {
-  margin-left: 16px;
   text-decoration: none;
   color: #fff;
   font-size: 20px;
+}
+
+@media screen and (max-width: 1260px) {
+  .link a span {
+    display: none;
+  }
+  nav {
+    padding: 30px 60px 0 30px;
+  }
+  #ig_logo_mobile {
+    display: block;
+  }
+  #ig_logo_desktop {
+    display: none;
+  }
 }/*# sourceMappingURL=sidebar.css.map */

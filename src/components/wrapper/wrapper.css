@@ -4,4 +4,9 @@
   justify-content: flex-start;
   width: 100vw;
   background-color: black;
+}
+.wrapper .content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=wrapper.css.map */

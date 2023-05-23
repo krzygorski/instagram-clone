@@ -35,7 +35,7 @@ export const Post = ({ post }) => {
         }}
       ></div>
       <div className="post_panel">
-        <div className="post_panel_likes">
+        <div className="post_panel_action">
           <div>
             <FontAwesomeIcon
               icon="fa-regular fa-heart"
@@ -47,18 +47,37 @@ export const Post = ({ post }) => {
             />
             <FontAwesomeIcon
               icon="fa-regular fa-paper-plane"
-              className="post_panel_icon post_panel_icon_last"
+              className="post_panel_icon"
             />
           </div>
           <div>
             {" "}
             <FontAwesomeIcon
               icon="fa-regular fa-bookmark"
-              className="post_panel_icon"
+              className="post_panel_icon post_panel_icon_last"
             />
           </div>
         </div>
-        <div className="post_panel_comments"></div>
+
+        <span className="post_panel_likes_number">Liczba polubień: 1429</span>
+        <div className="post_panel_description">
+          <span className="post_panel_description_name">functionaltennis</span>{" "}
+          <span className="post_panel_description_content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          </span>
+        </div>
+
+        <div className="post_panel_comments">
+          <div className="post_panel_comment"></div>
+        </div>
+        <div className="post_panel_more_comments">
+          {" "}
+          <span>Zobacz wszystkie komentarze: 7</span>
+        </div>
+
+        <div className="post_new_comment">
+          <input type="text" name="" id="" placeholder="Dodaj komentarz..." />
+        </div>
       </div>
     </div>
   );

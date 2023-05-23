@@ -1,6 +1,16 @@
 nav
-    padding: 30px 60px 0 20px
+    padding: 30px 60px 0 40px
+    border-right: 1px solid #333
+    position: fixed
+    top: 0
+    left: 0
+    height: 100vh
+    #ig_logo_mobile
+        display: none
+    #ig_logo_desktop
+        display: block
     .links
+        margin-top: 40px
         display: flex
         flex-direction: column
         align-items: flex-start
@@ -14,8 +24,29 @@ nav
                 color: white
                 width: 24
                 height: 24
+                margin-right: 16px
             a
-                margin-left: 16px
+                
                 text-decoration: none
                 color: #fff
                 font-size: 20px
+$phone: 450px
+$medium: 1260px
+
+
+  
+@media screen and (max-width: $medium) 
+    .link
+        a
+            span
+                display: none
+
+    nav
+        padding: 30px 60px 0 30px
+    #ig_logo_mobile
+        display: block
+    #ig_logo_desktop
+        display: none
+    //do Smth
+  
+
