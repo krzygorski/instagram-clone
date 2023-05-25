@@ -1,16 +1,16 @@
 nav {
   padding: 30px 60px 0 40px;
   border-right: 1px solid #333;
-  position: fixed;
-  top: 0;
-  left: 0;
   height: 100vh;
 }
 nav #ig_logo_mobile {
   display: none;
+  width: 0;
+  height: 0;
 }
 nav #ig_logo_desktop {
-  display: block;
+  width: 103;
+  height: 29;
 }
 nav .links {
   margin-top: 40px;
@@ -31,9 +31,14 @@ nav .links .link svg {
   margin-right: 16px;
 }
 nav .links .link a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
+}
+nav .links #mobileNavProfilePic {
+  display: none;
 }
 
 @media screen and (max-width: 1260px) {
@@ -45,8 +50,50 @@ nav .links .link a {
   }
   #ig_logo_mobile {
     display: block;
+    height: 24;
+    width: 24;
   }
   #ig_logo_desktop {
     display: none;
+    width: 0;
+    height: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  nav {
+    border: none;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: unset;
+    height: unset;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  nav #ig_logo_desktop, nav #ig_logo_mobile {
+    width: 0;
+    height: 0;
+    display: none;
+    transform: scale(0);
+  }
+  nav .links {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0 10px;
+  }
+  nav .links svg {
+    transform: scale(1.2);
+  }
+  nav .links #mobileNavProfilePic {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
   }
 }/*# sourceMappingURL=sidebar.css.map */

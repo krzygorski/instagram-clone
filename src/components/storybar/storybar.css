@@ -1,0 +1,58 @@
+.storybar {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.storybar .top {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+.storybar .top .fontAwesome {
+  transform: scale(1.5);
+  margin: 0 10px;
+}
+.storybar .stories {
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.storybar .stories .story_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+.storybar .stories .story_item div {
+  background: linear-gradient(to right, red, purple);
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 3px;
+}
+.storybar .stories .story_item div img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 2px solid rgb(18, 18, 18);
+}
+.storybar .stories .story_item span {
+  color: white;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 451px) {
+  .storybar {
+    border-bottom: 1px solid #333;
+  }
+}/*# sourceMappingURL=storybar.css.map */

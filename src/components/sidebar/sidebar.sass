@@ -1,14 +1,18 @@
 nav
     padding: 30px 60px 0 40px
     border-right: 1px solid #333
-    position: fixed
-    top: 0
-    left: 0
+    // position: fixed
+    // top: 0
+    // left: 0
     height: 100vh
     #ig_logo_mobile
         display: none
+        width: 0
+        height: 0
     #ig_logo_desktop
-        display: block
+        // display: block
+        width: 103
+        height: 29
     .links
         margin-top: 40px
         display: flex
@@ -26,10 +30,13 @@ nav
                 height: 24
                 margin-right: 16px
             a
-                
+                display: flex
+                align-items: center
                 text-decoration: none
                 color: #fff
-                font-size: 20px
+                font-size: 18px
+        #mobileNavProfilePic
+            display: none
 $phone: 450px
 $medium: 1260px
 
@@ -42,11 +49,53 @@ $medium: 1260px
                 display: none
 
     nav
+        // position: fixed
+        // left: 0
+        // top: 0
+        // background-color: red
         padding: 30px 60px 0 30px
     #ig_logo_mobile
         display: block
+        height: 24
+        width: 24
+
     #ig_logo_desktop
         display: none
+        width: 0
+        height: 0
     //do Smth
-  
+@media screen and (max-width: $phone) 
+     nav
+        border: none
+        padding: 0
+        width: 100%
+        position: fixed
+        left: 0
+        bottom: 0
+        top: unset
+        // background-color: red
+        height: unset
+        background-color: black
+        display: flex
+        flex-direction: row
+        align-items: center
+        #ig_logo_desktop, #ig_logo_mobile
+            width: 0
+            height: 0
+            display: none
+            transform: scale(0)
+        .links
+            width: 100%
+            flex-direction: row
+            justify-content: space-around
+            margin: 0
+            padding: 0 10px
+            svg
+                transform: scale(1.2)
+            #mobileNavProfilePic
+                display: block
+                width: 30px
+                height: 30px
+                border-radius: 100%
+
 
