@@ -1,6 +1,14 @@
-.explore_item img {
-  width: 200px;
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.explore {
+  width: 60%;
+}
+
+@media screen and (max-width: 950px) {
+  .explore {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .explore {
+    width: 100%;
+  }
 }/*# sourceMappingURL=explore.css.map */

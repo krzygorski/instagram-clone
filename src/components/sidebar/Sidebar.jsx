@@ -13,7 +13,7 @@ export const Sidebar = () => {
     {
       icon: "fa-solid fa-magnifying-glass",
       text: "Szukaj",
-      link: "/search",
+      link: "/#",
     },
     {
       icon: "fa-regular fa-compass",
@@ -24,13 +24,13 @@ export const Sidebar = () => {
     {
       icon: "fa-solid fa-plus-square",
       text: "Utwórz",
-      link: "/add",
+      link: "/#",
     },
 
     {
       icon: "fa-solid fa-heart",
       text: "Likes",
-      link: "/likes",
+      link: "/#",
     },
   ];
 

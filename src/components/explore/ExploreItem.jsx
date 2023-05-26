@@ -1,12 +1,8 @@
 import React from "react";
 import "./explore.css";
-export const ExploreItem = ({ photo = true }) => {
+export const ExploreItem = ({ photo = true, img }) => {
   if (photo) {
-    return (
-      <div className="explore_item">
-        <img src="https://picsum.photos/200/300" alt="random" />
-      </div>
-    );
+    return <img className="explore_item" src={img.url} alt="random" />;
   }
   return <div className="explore-item"></div>;
 };
