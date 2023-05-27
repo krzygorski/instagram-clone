@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./storybar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import axios from "axios";
 
 export const Storybar = () => {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    axios.get("https://jsonplaceholder.typicode.com/users").then((res) => {
+      setUsers(res.data);
+    });
+  }, []);
+
   const stories = new Array(30).fill({
     id: 2,
     name: "John Doe",
@@ -45,7 +54,12 @@ export const Storybar = () => {
         </div>
       )}
       <div className="stories">
-        {stories.map((story) => {
+        {users.map((users) => {
+          const story = {
+            id: users.id,
+            name: users.name,
+            imgSrc: "https://picsum.photos/200/300",
+          };
           return (
             <div className="story_item" key={story.id}>
               <div>
