@@ -1,9 +1,9 @@
 // instagram post component
-import React from "react";
+
 import "./post.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export const Post = ({ post }) => {
+export const Post = () => {
   return (
     <div className="post">
       <div className="post_header">

@@ -1,15 +1,12 @@
-import React, { useEffect, useState } from "react";
-// import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import { useEffect, useState } from "react";
+
 import { ExploreItem } from "./ExploreItem";
 
-// import Masonry from "@mui/lab/Masonry";
-// import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+
 
 import axios from "axios";
 import { Masonry } from "@mui/lab";
-// import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
-// import { Masonry } from "@mui/lab";
 export const Explore = () => {
   const [images, setImages] = useState([]);
   let columns;
@@ -27,9 +24,7 @@ export const Explore = () => {
   }
 
   useEffect(() => {
-    // fetching images is done in separate request, becase json placeholder api
-    // enables fetching multiple images only in number of 5000 (bulked) which
-    // causes browser lags
+
     const promise = Promise.all(
       new Array(50).fill(0).map((e, index) => {
         return axios.get(

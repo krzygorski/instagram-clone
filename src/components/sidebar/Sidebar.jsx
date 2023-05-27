@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-// import { Link } from "react-router-dom";
+
 import "./sidebar.css";
 export const Sidebar = () => {
   const screenWidth = window.innerWidth;

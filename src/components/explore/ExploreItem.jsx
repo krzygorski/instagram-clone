@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./explore.css";
 export const ExploreItem = ({ photo = true, img }) => {
   if (photo) {

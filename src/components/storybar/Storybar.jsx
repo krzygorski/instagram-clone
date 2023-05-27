@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./storybar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
@@ -12,11 +12,11 @@ export const Storybar = () => {
     });
   }, []);
 
-  const stories = new Array(30).fill({
-    id: 2,
-    name: "John Doe",
-    imgSrc: "https://picsum.photos/200/300",
-  });
+  // const stories = new Array(30).fill({
+  //   id: 2,
+  //   name: "John Doe",
+  //   imgSrc: "https://picsum.photos/200/300",
+  // });
 
   return (
     <div className="storybar">
